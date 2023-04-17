@@ -1,5 +1,5 @@
-import TemplateOverview from "./template-overview";
+import Home from "../views/home";
 
 export default function App() {
-  return <TemplateOverview />;
+  return <Home />;
 }
