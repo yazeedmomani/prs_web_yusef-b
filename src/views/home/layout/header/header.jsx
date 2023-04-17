@@ -1,8 +1,10 @@
-import image from "../../../../images/background.jpg";
+import image from "./images/background.png";
 import styles from "./header.module.scss";
 import Arrow from "./components/arrow";
 
 export default function Header() {
+  function handleArrowClick() {}
+
   return (
     <header
       className={styles.header}
@@ -26,9 +28,12 @@ export default function Header() {
             </span>
           </h1>
           <div
+            onClick={handleArrowClick}
             className={styles.arrowContainer}
             role="button">
-            <Arrow className={styles.arrow} />
+            <a href="#cta">
+              <Arrow className={styles.arrow} />
+            </a>
           </div>
         </div>
       </div>

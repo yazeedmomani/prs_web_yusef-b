@@ -1,0 +1,18 @@
+.cta {
+  max-width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer {
+  max-width: 35rem;
+  overflow-x: hidden;
+  align-self: end;
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+}
