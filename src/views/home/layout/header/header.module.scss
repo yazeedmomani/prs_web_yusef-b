@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.imageContainer {
+.container {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -26,6 +26,7 @@
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -48,4 +49,15 @@
 .name {
   font-family: "Comic Sans";
   font-size: 7.2rem;
+}
+
+.arrowContainer {
+  position: absolute;
+  bottom: 2.4rem;
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline-block;
+  fill: #fff;
 }

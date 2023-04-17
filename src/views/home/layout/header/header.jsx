@@ -1,10 +1,13 @@
 import image from "../../../../images/background.jpg";
 import styles from "./header.module.scss";
+import Arrow from "./components/arrow";
 
 export default function Header() {
   return (
-    <header className={styles.header}>
-      <div className={styles.imageContainer}>
+    <header
+      className={styles.header}
+      id="header">
+      <div className={styles.container}>
         <img
           className={styles.image}
           src={image}
@@ -22,6 +25,11 @@ export default function Header() {
               The joke juggler who turns your frown upside down!
             </span>
           </h1>
+          <div
+            className={styles.arrowContainer}
+            role="button">
+            <Arrow className={styles.arrow} />
+          </div>
         </div>
       </div>
     </header>
