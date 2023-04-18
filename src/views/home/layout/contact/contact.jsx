@@ -7,7 +7,9 @@ import Fade from "react-reveal/Fade";
 
 export default function Contact() {
   return (
-    <section className={styles.contact}>
+    <section
+      className={styles.contact}
+      id="contact">
       <Fade
         top
         distance="40px"

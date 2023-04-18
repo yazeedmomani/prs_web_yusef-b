@@ -3,12 +3,16 @@ import image from "./images/yusef.png";
 import Btn from "./components/btn";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
+import Modal from "./components/modal";
+import { useState } from "react";
 
 export default function CTA() {
+  const [showModal, setShowModal] = useState(false);
+
   function handleSubscribeClick(e) {
     e.preventDefault();
 
-    console.log("test");
+    setShowModal(true);
   }
 
   return (
@@ -47,7 +51,11 @@ export default function CTA() {
               onClick={handleSubscribeClick}>
               Subscribe
             </Btn>
-            <Btn className={styles.btn}>Contact</Btn>
+            <Btn
+              className={styles.btn}
+              href="#contact">
+              Contact
+            </Btn>
           </div>
         </Fade>
       </div>
@@ -62,6 +70,7 @@ export default function CTA() {
           />
         </div>
       </Slide>
+      {showModal && <Modal setShowModal={setShowModal}/>}
     </section>
   );
 }
