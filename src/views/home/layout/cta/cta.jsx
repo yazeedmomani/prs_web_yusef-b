@@ -1,7 +1,14 @@
 import styles from "./cta.module.scss";
 import image from "./images/yusef.png";
+import Btn from "./components/btn";
 
 export default function CTA() {
+  function handleSubscribeClick(e) {
+    e.preventDefault();
+
+    console.log("test");
+  }
+
   return (
     <section
       className={styles.cta}
@@ -15,6 +22,12 @@ export default function CTA() {
           special, "Comedy 101"! Subscribe now and receive your exclusive link
           via WhatsApp and email. Rest assured, we are spam-free!
         </p>
+        <Btn
+          className={styles.btn}
+          onClick={handleSubscribeClick}>
+          Subscribe
+        </Btn>
+        <Btn className={styles.btn}>Contact</Btn>
       </div>
       <div className={styles.imageContainer}>
         <img
