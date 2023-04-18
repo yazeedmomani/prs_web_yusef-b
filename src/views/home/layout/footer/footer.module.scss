@@ -1,0 +1,14 @@
+.footer {
+  background-color: #333;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  font-family: "roboto";
+}
