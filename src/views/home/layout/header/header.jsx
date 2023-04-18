@@ -1,10 +1,10 @@
 import image from "./images/background.png";
 import styles from "./header.module.scss";
 import Arrow from "./components/arrow";
+import Tada from "react-reveal/Tada";
+import Fade from "react-reveal/Fade";
 
 export default function Header() {
-  function handleArrowClick() {}
-
   return (
     <header
       className={styles.header}
@@ -17,18 +17,31 @@ export default function Header() {
         />
         <div className={styles.overlay}>
           <h1 className={styles.h1}>
-            <span className={styles.other}>Meet</span>
-            <span
-              className={styles.name}
-              role="button">
-              Yusef Bataineh
-            </span>
-            <span className={styles.other}>
-              The joke juggler who turns your frown upside down!
-            </span>
+            <Fade
+              left
+              duration={1000}
+              distance="80px"
+              delay={200}>
+              <span className={styles.other}>Meet</span>
+            </Fade>
+            <Tada delay={1200}>
+              <span
+                className={styles.name}
+                role="button">
+                Yusef Bataineh
+              </span>
+            </Tada>
+            <Fade
+              right
+              duration={1000}
+              distance="80px"
+              delay={200}>
+              <span className={styles.other}>
+                The joke juggler who turns your frown upside down!
+              </span>
+            </Fade>
           </h1>
           <div
-            onClick={handleArrowClick}
             className={styles.arrowContainer}
             role="button">
             <a href="#cta">
