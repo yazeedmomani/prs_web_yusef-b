@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/prs_web_yusef-b/static/css/main.8692f152.css",
+    "main.js": "/prs_web_yusef-b/static/js/main.9b3921d6.js",
+    "static/media/background.png": "/prs_web_yusef-b/static/media/background.70243ed9474dc193b41a.png",
+    "static/media/yusef.png": "/prs_web_yusef-b/static/media/yusef.e712b749b96bd0b3b031.png",
+    "static/media/comic-sans.ttf": "/prs_web_yusef-b/static/media/comic-sans.3198d266c6629f0b7ce0.ttf",
+    "index.html": "/prs_web_yusef-b/index.html",
+    "main.8692f152.css.map": "/prs_web_yusef-b/static/css/main.8692f152.css.map",
+    "main.9b3921d6.js.map": "/prs_web_yusef-b/static/js/main.9b3921d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8692f152.css",
+    "static/js/main.9b3921d6.js"
+  ]
+}
